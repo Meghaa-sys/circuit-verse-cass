@@ -182,7 +182,7 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
           <span className="title-slant inline-block">
             {letters('CIRCUIT', 'text-white-glow')}
             <span className="inline-block w-[0.35em]" />
-            {letters('VERSE', 'text-ember-glow')}
+            {letters('VERSE', 'text-verse-glow')}
           </span>
         </h1>
 

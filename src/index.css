@@ -76,6 +76,7 @@ html.lenis, html.lenis body { height: auto; }
 .font-display { font-family: var(--font-display); }
 .title-slant { transform: skewX(-9deg); }
 .text-ember-glow { color: #FF7A2E; text-shadow: 0 0 18px rgba(255,122,46,.65), 0 0 46px rgba(255,122,46,.35); }
+.text-verse-glow { color: #A855F7; text-shadow: 0 0 18px rgba(168,85,247,.75), 0 0 46px rgba(168,85,247,.45); }
 .text-white-glow { color: #fff; text-shadow: 0 0 22px rgba(216,180,255,.45); }
 .tech-label { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .32em; }
 

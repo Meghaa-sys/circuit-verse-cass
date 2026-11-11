@@ -100,12 +100,12 @@ export default function Hero({ quality, mobile }: Props) {
             <img
               src="/assets/logo-infinity.webp" alt="Circuit Verse infinity logo" width={810} height={405}
               className="mt-3 w-[min(54vw,250px)] lg:w-[clamp(190px,16vw,270px)]"
-              style={{ filter: 'drop-shadow(0 0 14px rgba(168,85,247,.55)) drop-shadow(0 0 30px rgba(255,122,46,.25))' }}
+              style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.75)) drop-shadow(0 0 36px rgba(216,180,255,.45))' }}
             />
             <h1 className="mt-2 font-display font-black uppercase leading-none">
               <span className="sr-only">IEEE Circuit Verse</span>
               <span aria-hidden className="title-slant inline-block whitespace-nowrap text-[7.6vw] tracking-[0.05em] sm:text-[3rem] lg:text-[clamp(2.2rem,3.05vw,3.8rem)]">
-                <span className="text-white-glow">CIRCUIT</span>{' '}<span className="text-ember-glow">VERSE</span>
+                <span className="text-white-glow">CIRCUIT</span>{' '}<span className="text-verse-glow">VERSE</span>
               </span>
             </h1>
             <p className="tech-label mt-6 text-[11px] tracking-[0.5em] text-[#b9a6ff] sm:text-sm lg:mt-5">
