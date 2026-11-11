@@ -176,15 +176,15 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
 
       <div ref={stage} className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
         <div className="relative grid aspect-square place-items-center" style={{ width: 'min(60vw, 300px)' }}>
-          {/* violet / lavender energy halo — the logo keeps its own violet identity */}
+          {/* orange energy halo for the orange infinity logo */}
           <div className="sp-ring sp-pulse absolute -inset-[14%] rounded-full opacity-80"
-            style={{ background: 'radial-gradient(circle, rgba(168,85,247,.55) 0%, rgba(216,180,255,.18) 40%, transparent 68%)', filter: 'blur(16px)' }} />
-          <div className="sp-ring absolute inset-0 rounded-full border border-neon/40" />
-          <div className="sp-ring absolute -inset-[9%] rounded-full border border-dashed border-lav/25"
+            style={{ background: 'radial-gradient(circle, rgba(255,122,46,.55) 0%, rgba(255,176,116,.2) 40%, transparent 68%)', filter: 'blur(16px)' }} />
+          <div className="sp-ring absolute inset-0 rounded-full border border-ember/40" />
+          <div className="sp-ring absolute -inset-[9%] rounded-full border border-dashed border-ember/30"
             style={{ animation: 'spin 24s linear infinite' }} />
           <img src="/assets/logo-infinity.webp" alt="Circuit Verse infinity logo" width={810} height={405}
             className="sp-logo relative w-[92%]"
-            style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.85)) drop-shadow(0 0 38px rgba(216,180,255,.45))' }} />
+            style={{ filter: 'drop-shadow(0 0 16px rgba(255,122,46,.85)) drop-shadow(0 0 38px rgba(255,180,120,.45))' }} />
         </div>
 
         <h1 className="mt-8 font-display text-[2.1rem] font-bold uppercase leading-none tracking-[0.16em] sm:text-6xl" style={{ perspective: 800 }}>
