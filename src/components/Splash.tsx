@@ -4,7 +4,7 @@ import { VerseE } from './ui/Icons';
 
 type Props = { onExit: () => void; onDone: () => void; mobile: boolean };
 
-const ASSETS = ['/assets/lab-background.webp', '/assets/mascot.webp', '/assets/logo-infinity.webp'];
+const ASSETS = ['/assets/lab-background.webp', '/assets/mascot.webp', '/assets/logo-infinity.webp', '/assets/logo-infinity-duo.webp'];
 
 function preload(): Promise<void> {
   const all = ASSETS.map(
@@ -176,15 +176,15 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
 
       <div ref={stage} className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
         <div className="relative grid aspect-square place-items-center" style={{ width: 'min(60vw, 300px)' }}>
-          {/* violet / lavender energy halo — the logo keeps its own violet identity */}
+          {/* violet / orange energy halo matching the classic duo infinity logo */}
           <div className="sp-ring sp-pulse absolute -inset-[14%] rounded-full opacity-80"
-            style={{ background: 'radial-gradient(circle, rgba(168,85,247,.55) 0%, rgba(216,180,255,.18) 40%, transparent 68%)', filter: 'blur(16px)' }} />
+            style={{ background: 'radial-gradient(circle, rgba(168,85,247,.55) 0%, rgba(255,122,46,.2) 42%, transparent 68%)', filter: 'blur(16px)' }} />
           <div className="sp-ring absolute inset-0 rounded-full border border-neon/40" />
-          <div className="sp-ring absolute -inset-[9%] rounded-full border border-dashed border-lav/25"
+          <div className="sp-ring absolute -inset-[9%] rounded-full border border-dashed border-ember/30"
             style={{ animation: 'spin 24s linear infinite' }} />
-          <img src="/assets/logo-infinity.webp" alt="Circuit Verse infinity logo" width={810} height={405}
+          <img src="/assets/logo-infinity-duo.webp" alt="Circuit Verse infinity logo" width={810} height={405}
             className="sp-logo relative w-[92%]"
-            style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.85)) drop-shadow(0 0 38px rgba(216,180,255,.45))' }} />
+            style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.85)) drop-shadow(0 0 38px rgba(255,122,46,.45))' }} />
         </div>
 
         <h1 className="mt-8 font-display text-[clamp(1.2rem,6.4vw,2.1rem)] font-bold uppercase leading-none tracking-[0.08em] sm:text-6xl sm:tracking-[0.16em]" style={{ perspective: 800 }}>
