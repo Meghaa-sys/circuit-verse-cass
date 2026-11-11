@@ -187,8 +187,8 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
             style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.85)) drop-shadow(0 0 38px rgba(216,180,255,.45))' }} />
         </div>
 
-        <h1 className="mt-8 font-display text-[2.1rem] font-bold uppercase leading-none tracking-[0.16em] sm:text-6xl" style={{ perspective: 800 }}>
-          <span className="inline-block">
+        <h1 className="mt-8 font-display text-[clamp(1.2rem,6.4vw,2.1rem)] font-bold uppercase leading-none tracking-[0.08em] sm:text-6xl sm:tracking-[0.16em]" style={{ perspective: 800 }}>
+          <span className="inline-block whitespace-nowrap">
             {letters('CIRCUIT', 'text-white-glow')}
             <span className="inline-block w-[0.35em]" />
             {verseLetters('text-verse-glow')}
