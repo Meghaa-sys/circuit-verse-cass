@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import gsap from 'gsap';
+import { VerseE } from './ui/Icons';
 
 type Props = { onExit: () => void; onDone: () => void; mobile: boolean };
 
@@ -145,6 +146,14 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
       <span key={i} className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}>{ch}</span>
     ));
 
+  const verseLetters = (cls: string) => [
+    <span key="v" className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}>V</span>,
+    <span key="e1" className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}><VerseE /></span>,
+    <span key="r" className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}>R</span>,
+    <span key="s" className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}>S</span>,
+    <span key="e2" className={`sp-ch inline-block ${cls}`} style={{ perspective: 600 }}>E</span>,
+  ];
+
   return (
     <div
       ref={root}
@@ -178,11 +187,11 @@ export default function Splash({ onExit, onDone, mobile }: Props) {
             style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.85)) drop-shadow(0 0 38px rgba(216,180,255,.45))' }} />
         </div>
 
-        <h1 className="mt-8 font-display text-[2.1rem] font-black uppercase leading-none tracking-[0.12em] sm:text-6xl" style={{ perspective: 800 }}>
-          <span className="title-slant inline-block">
+        <h1 className="mt-8 font-display text-[2.1rem] font-bold uppercase leading-none tracking-[0.16em] sm:text-6xl" style={{ perspective: 800 }}>
+          <span className="inline-block">
             {letters('CIRCUIT', 'text-white-glow')}
             <span className="inline-block w-[0.35em]" />
-            {letters('VERSE', 'text-verse-glow')}
+            {verseLetters('text-verse-glow')}
           </span>
         </h1>
 

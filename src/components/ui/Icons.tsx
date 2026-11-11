@@ -32,6 +32,29 @@ export function CodeIcon({ className = '', size = 64 }: P) {
   );
 }
 
+/** Stylized 3-bar "E" for VERSE matching the brand lockup */
+export function VerseE({ className = '' }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 20 22"
+      fill="currentColor"
+      className={`inline-block shrink-0 ${className}`}
+      style={{
+        width: '0.74em',
+        height: '0.82em',
+        verticalAlign: '-0.02em',
+        margin: '0 0.04em',
+        filter: 'drop-shadow(0 0 10px rgba(168,85,247,.65))',
+      }}
+      aria-hidden="true"
+    >
+      <rect x="0" y="0.5" width="20" height="3.8" rx="0.6" />
+      <rect x="0.5" y="9.1" width="18" height="3.8" rx="0.6" />
+      <rect x="0" y="17.7" width="20" height="3.8" rx="0.6" />
+    </svg>
+  );
+}
+
 /** Simplified neutral diamond mark. Swap for the official IEEE logo asset (see README). */
 export function IeeeMark({ className = '' }: { className?: string }) {
   return (
