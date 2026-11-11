@@ -20,8 +20,8 @@ function OrbitVisual() {
           {i === 1 && <span className="absolute -bottom-[5px] left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-lav shadow-[0_0_12px_3px_#A855F7]" />}
         </div>
       ))}
-      <img src="/assets/logo-infinity.webp" alt="" className="floaty absolute left-1/2 top-1/2 w-[46%] -translate-x-1/2 -translate-y-1/2"
-        style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.7)) drop-shadow(0 0 34px rgba(216,180,255,.35))' }} />
+      <img src="/assets/logo-infinity-duo.webp" alt="" className="floaty absolute left-1/2 top-1/2 w-[46%] -translate-x-1/2 -translate-y-1/2"
+        style={{ filter: 'drop-shadow(0 0 16px rgba(168,85,247,.7)) drop-shadow(0 0 34px rgba(255,122,46,.4))' }} />
       <style>{`@keyframes orbit{to{transform:rotate(360deg)}}`}</style>
     </div>
   );
