@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { NAV, ORGANISER, REGISTER_URL } from '../data';
 import { IeeeMark } from './ui/Icons';
 import Btn from './ui/Btn';
+import SoundToggle from './ui/SoundToggle';
 import { useActiveSection, useScrolled } from '../lib/hooks';
 import { scrollToTarget } from '../lib/lenis';
 
@@ -53,6 +54,7 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <SoundToggle />
             <div className="hidden sm:block"><Btn href={REGISTER_URL} variant="outline" arrow="up">Register Now</Btn></div>
             <button
               type="button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}
@@ -81,7 +83,10 @@ export default function Navbar() {
                 </motion.a>
               ))}
             </nav>
-            <div className="mt-10"><Btn href={REGISTER_URL} arrow="up" className="w-full">Register Now</Btn></div>
+            <div className="mt-10 flex flex-col gap-4">
+              <SoundToggle className="self-start" />
+              <Btn href={REGISTER_URL} arrow="up" className="w-full">Register Now</Btn>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

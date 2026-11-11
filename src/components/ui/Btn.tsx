@@ -3,6 +3,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { scrollToTarget } from '../../lib/lenis';
 import { useIsCoarse } from '../../lib/env';
+import { playClickSound } from '../../lib/audio';
 
 type Props = {
   href: string;
@@ -50,6 +51,7 @@ export default function Btn({ href, variant = 'primary', children, className = '
         href={href}
         onPointerMove={onMove}
         onClick={(e) => {
+          playClickSound();
           if (href.startsWith('#')) {
             e.preventDefault();
             scrollToTarget(href);
